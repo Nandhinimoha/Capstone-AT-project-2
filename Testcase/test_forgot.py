@@ -14,7 +14,7 @@ def setup():
     yield driver
     driver.quit()
 
-
+# Test case: TC_PIM_01
 def test_forgot(setup):
     obj = Forgot_password(setup)
     obj.login_page("Admin")

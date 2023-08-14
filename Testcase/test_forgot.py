@@ -13,8 +13,8 @@ def setup():
     driver.maximize_window()
     yield driver
     driver.quit()
-
-# Test case: TC_PIM_01
+ 
+# Test case: TC_PIM_01 (Forgot password link)
 def test_forgot(setup):
     obj = Forgot_password(setup)
     obj.login_page("Admin")

@@ -9,7 +9,8 @@ class Forgot_password:
         self.driver = driver
         self.wait = WebDriverWait(self.driver, 20)
         self.actions = ActionChains(self.driver)
-    def login_page(self,username):
+# Test case: TC_PIM_01
+    def login_page(self,username): 
         before_url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode"
         forgot_pass = self.wait.until(EC.element_to_be_clickable((By.XPATH, "//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']")))
         forgot_pass.click()

@@ -74,7 +74,7 @@ class AdminPage():
 
            search1 = self.wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Search']")))
            search1.send_keys(10 * Keys.BACKSPACE)
-           search1.send_keys("leave")
+           search1.send_keys("LEAVE")
            leave = self.wait.until(
                EC.visibility_of_element_located((By.XPATH, "//*[@id='app']/div[1]/div[1]/aside/nav/div[2]/ul/li/a")))
            if leave.is_displayed():

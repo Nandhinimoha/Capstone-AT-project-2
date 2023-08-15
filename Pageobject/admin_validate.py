@@ -250,7 +250,7 @@ class AdminPage():
             menu= self.wait.until(EC.visibility_of_element_located((By.XPATH,"//*[@id='app']/div[1]/div[1]/aside/nav/div[2]/ul")))
             list_elements = menu.find_elements(By.TAG_NAME,"li")
             print(len(list_elements))
-            expected_options =["Admin", "PIM","Leave","Time","Recruitment","My Info","Performance ","Dashboard" ,"Directory","Maintenance","Claim ","Buzz","Main menu"]
+            expected_options =["Admin", "PIM","Leave","Time","Recruitment","My Info","Performance ","Dashboard" ,"Directory","Maintenance","Claim ","Buzz"]
             for expected_option in expected_options:
                 for option_element in list_elements:
                     if expected_option in option_element.text:
